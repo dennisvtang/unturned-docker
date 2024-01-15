@@ -29,7 +29,7 @@ if [ ! -d "$MODULES_DIR/Rocket.Unturned" ]; then
         rm README.md
         rm LICENSE
         rm Rocket.zip
-    fi    
+    fi
 fi
 
 # Start game
