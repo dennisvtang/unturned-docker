@@ -18,10 +18,10 @@ RUN adduser \
 	--quiet \
 	steam
 
-# Create working directory
-RUN mkdir -p /home/steam/Unturned && \
-	cd /home/steam/Unturned && \
-	chown -R steam /home/steam/Unturned
+# Create game directory
+RUN mkdir -p ${GAME_INSTALL_DIR} && \
+	cd ${GAME_INSTALL_DIR} && \
+	chown -R steam ${GAME_INSTALL_DIR}
 
 VOLUME ["/home/steam/Unturned"]
 
